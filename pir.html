@@ -2,6 +2,7 @@
 layout: contact
 title: Partner Information Request
 permalink: /pir/
+published: true
 ---
 
 <div id="contactwrap"></div>
@@ -12,29 +13,246 @@ permalink: /pir/
             <h4>Just Get In Touch!</h4>
             <div class="hline"></div>
                 <p>{{ site.about }}</p>
-                <form role="form">
-                  <div class="form-group">
-                    <label for="InputName1">Your Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <div class="form-group">
-                    <label for="InputName1">Your Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
-                  </div>                  
-                  <div class="form-group">
-                    <label for="InputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <div class="form-group">
-                    <label for="InputSubject1">Subject</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <div class="form-group">
-                    <label for="message1">Message</label>
-                    <textarea class="form-control" id="message1" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-theme">Submit</button>
-                </form>
+                <form role="form" class="form-horizontal">
+
+<fieldset>
+
+<!-- Form Name -->
+<legend>Partner Information Request</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput1">Company Name</label>  
+  <div class="col-md-4">
+  <input id="textinput1" name="textinput1" type="text" placeholder="ea: John's Furniture Shop" class="form-control input-md" required="">
+  <span class="help-block">for customers, not for legal documents</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput2">Website</label>  
+  <div class="col-md-4">
+  <input id="textinput2" name="textinput2" type="text" placeholder="domain.com" class="form-control input-md" required="">
+  <span class="help-block">help</span>  
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic1">? Activity</label>
+  <div class="col-md-4">
+    <select id="selectbasic1" name="selectbasic1" class="form-control">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectmultiple1">? Speciality</label>
+  <div class="col-md-4">
+    <select id="selectmultiple1" name="selectmultiple1" class="form-control" multiple="multiple">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic2">Country</label>
+  <div class="col-md-4">
+    <select id="selectbasic2" name="selectbasic2" class="form-control">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput3">? City</label>  
+  <div class="col-md-4">
+  <input id="textinput3" name="textinput3" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes1">Request Information for</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes1-0">
+      <input type="checkbox" name="checkboxes1" id="checkboxes1-0" value="1">
+      3mma Table
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes1-1">
+      <input type="checkbox" name="checkboxes1" id="checkboxes1-1" value="2">
+      3mmo Table
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes1-2">
+      <input type="checkbox" name="checkboxes1" id="checkboxes1-2" value="3">
+      3mmi Table
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes1-3">
+      <input type="checkbox" name="checkboxes1" id="checkboxes1-3" value="4">
+      Scooterdesk
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes1-4">
+      <input type="checkbox" name="checkboxes1" id="checkboxes1-4" value="5">
+      Future Products
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="prependedcheckbox1"></label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon">     
+          <input type="checkbox">     
+      </span>
+      <input id="prependedcheckbox1" name="prependedcheckbox1" class="form-control" type="text" placeholder="3mma Table">
+    </div>
+    
+  </div>
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="prependedcheckbox2"></label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon">     
+          <input type="checkbox">     
+      </span>
+      <input id="prependedcheckbox2" name="prependedcheckbox2" class="form-control" type="text" placeholder="3mmo Table">
+    </div>
+    
+  </div>
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="prependedcheckbox3"></label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon">     
+          <input type="checkbox">     
+      </span>
+      <input id="prependedcheckbox3" name="prependedcheckbox3" class="form-control" type="text" placeholder="3mmi Table">
+    </div>
+    
+  </div>
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="prependedcheckbox4"></label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon">     
+          <input type="checkbox">     
+      </span>
+      <input id="prependedcheckbox4" name="prependedcheckbox4" class="form-control" type="text" placeholder="ScooterDesk">
+    </div>
+    
+  </div>
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="prependedcheckbox5"></label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon">     
+          <input type="checkbox">     
+      </span>
+      <input id="prependedcheckbox5" name="prependedcheckbox5" class="form-control" type="text" placeholder="Other future products">
+    </div>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput4">First Name</label>  
+  <div class="col-md-4">
+  <input id="textinput4" name="textinput4" type="text" placeholder="John" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput5">Last Name</label>  
+  <div class="col-md-4">
+  <input id="textinput5" name="textinput5" type="text" placeholder="Doe" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput6">Email</label>  
+  <div class="col-md-4">
+  <input id="textinput6" name="textinput6" type="text" placeholder="yourname@company.com" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput7">Telephone direct (fixed)</label>  
+  <div class="col-md-4">
+  <input id="textinput7" name="textinput7" type="text" placeholder="ea: +32 26699666" class="form-control input-md" required="">
+  <span class="help-block">please include country code </span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput8">Telephone mobile</label>  
+  <div class="col-md-4">
+  <input id="textinput8" name="textinput8" type="text" placeholder="ea: +32 491 111111" class="form-control input-md" required="">
+  <span class="help-block">please include country code</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput9">Twitter ID</label>  
+  <div class="col-md-4">
+  <input id="textinput9" name="textinput9" type="text" placeholder="ea: yourname" class="form-control input-md" required="">
+  <span class="help-block">please don't include #</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput10">linkedin profile</label>  
+  <div class="col-md-4">
+  <input id="textinput10" name="textinput10" type="text" placeholder="http://www.linkedin.com/in/testcontact" class="form-control input-md" required="">
+  <span class="help-block">help</span>  
+  </div>
+</div>
+
+</fieldset>
+</form>
+
         </div><! --/col-lg-8 -->
 
         <div class="col-lg-4">
